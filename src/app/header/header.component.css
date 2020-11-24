@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.header-logo {
+  height: 65px;
+  object-fit: contain;
+  margin-left: 20px;
+}
+
+.header-input {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border: 1px solid lightgray;
+}
+
+.header-input > input {
+  flex: 1;
+  border: none;
+}
+
+.header-inputbutton {
+  padding-right: 5px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-icon {
+  margin-right: 8px;
+}

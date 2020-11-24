@@ -1,18 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
+import { RecommendedVideoComponent } from './recommended-video/recommended-video.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SideBarComponent
+    SideBarComponent,
+    RecommendedVideoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {
+        path: "header",
+        component: HeaderComponent
+      },
+      {
+        path: "side-bar",
+        component: SideBarComponent
+      },
+      {
+        path: "recommended-video",
+        component: RecommendedVideoComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
