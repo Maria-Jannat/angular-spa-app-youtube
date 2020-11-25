@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { RecommendedVideoComponent } from './recommended-video/recommended-video.component';
 import { RouterModule } from '@angular/router';
+// import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     BrowserModule,
+    // MatIconModule,
     RouterModule.forRoot([
       {
         path: "header",

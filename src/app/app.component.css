@@ -1,0 +1,13 @@
+/* .header-app {
+  width: max-content;
+  height: max-content;
+  background-color: aqua;
+  float: left;
+} */
+
+.app-page {
+  display: flex;
+  height: fit-content;
+  background-color: blueviolet;
+  float: left;
+}
